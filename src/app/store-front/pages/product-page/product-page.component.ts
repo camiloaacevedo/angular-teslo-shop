@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './product-page.component.html',
 })
-export class ProductPageComponent { }
+export class ProductPageComponent { 
+
+  productIdSlug = ...Component
+
+  // rxResource
+
+
+ }
