@@ -12,10 +12,11 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { productImagePipe } from '@products/pipes/product-image.pipe';
 
 @Component({
   selector: 'product-carousel',
-  imports: [],
+  imports: [productImagePipe],
   templateUrl: './product-carousel.component.html',
   styles: `
     .swiper {
