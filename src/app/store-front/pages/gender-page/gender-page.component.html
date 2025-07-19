@@ -1,5 +1,5 @@
 <h1 class="text-3xl font-bold font-montserrat">
-  Todos los productos 
+  Todos los productos
   <span class="text-accent">{{ gender() }}</span>
 </h1>
 <h2 class="text-xl">Para todos los gustos</h2>
@@ -16,3 +16,8 @@
   <p>No hay productos</p>
   }
 </div>
+
+<app-pagination
+  [pages]="productsResource.value()?.pages ?? 0"
+  [currentPage]="paginationService.currentPage()"
+/>
